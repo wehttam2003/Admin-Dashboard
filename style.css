@@ -1,3 +1,50 @@
+body{
+    margin: 0;
+
+}
+
 img{
     width: 35px;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(assets/Roboto-Regular.ttf);
+}
+*{
+    font-family: Roboto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr;
+    background-color: #fb7185;
+    height: 100%;
+    padding: 1em 0 0 1em;
+}
+
+.sidebar > div {
+    color: white;
+    font-size: 1.3em;
+}
+.sidebar-middle{
+    margin: 2em 0 4em 0;
+}
+
+.sidebar-middle div, .sidebar-top div, .sidebar-bottom div{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    margin: .5em 0 0 0;
+}
+
+.right-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
